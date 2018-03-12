@@ -61,7 +61,7 @@ const circle = function(x, y, r){
 // does the circle thing
 const drawC = function(){
   clear();
-  circle(parseInt(pic.getAttribute("width")), parseInt(pic.getAttribute("height")), 100 + Math.abs(circleSpeed * frame % 100 - 50));
+  circle(parseInt(pic.getAttribute("width")) / 2, parseInt(pic.getAttribute("height")) / 2, 100 + Math.abs(circleSpeed * frame % 100 - 50));
   frame = window.requestAnimationFrame(drawC);
   console.log(frame);
 }
